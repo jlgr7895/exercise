@@ -35,3 +35,6 @@ terraform.tfvars
 id_rsa
 id_rsa.pub
 
+.terraform/
+.terraform.lock.hcl
+
