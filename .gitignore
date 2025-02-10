@@ -18,7 +18,7 @@ crash.*.log
 .terraform/
 
 # Ignore any Terraform variable files that may contain secrets
-terraform.tfvars
+#terraform.tfvars
 *.auto.tfvars
 
 # Ignore output from Terraform provider plugins
