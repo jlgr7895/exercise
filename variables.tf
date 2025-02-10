@@ -39,3 +39,13 @@ variable "default_cidr_block" {
   type        = string
   default     = "0.0.0.0/0"
 }
+
+variable "access-key" {
+  description = "The access key for the AWS account"
+  type        = string
+}
+
+variable "secret-key" {
+  description = "The secret key for the AWS account"
+  type        = string
+}

@@ -10,8 +10,10 @@ terraform {
 }
 
 provider "aws" {
-  profile = "me"
-  region  = "us-west-1"
+  profile    = "me"
+  region     = "us-west-1"
+  access_key = var.access-key
+  secret_key = var.secret-key
   default_tags {
     tags = {
       env    = "test"
