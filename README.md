@@ -1,37 +1,28 @@
-# Ignore Terraform state files (Sensitive data)
-terraform.tfstate
-terraform.tfstate.backup
-*.tfstate
-*.tfstate.backup
+# Terraform AWS Infrastructure
 
-# Ignore Terraform crash logs
-crash.log
-crash.*.log
+## 📌 Overview
+This Terraform setup provisions:
+- A VPC with public/private subnets
+- NAT Gateway for private subnet internet access
+- Security Groups for EC2 instances
+- Remote state storage in S3
 
-# Ignore Terraform plan output files
-*.tfplan
-
-# Ignore Terraform lock file (Avoid conflicts in team environments)
-.terraform.lock.hcl
-
-# Ignore Terraform working directory (local dependencies)
-.terraform/
-
-# Ignore any Terraform variable files that may contain secrets
-terraform.tfvars
-*.auto.tfvars
-
-# Ignore output from Terraform provider plugins
-*.tfvars.json
-
-# Ignore IDE files (optional)
-.vscode/
-.idea/
-.DS_Store
-
-# Ignore SSH private keys (if storing them)
-*.pem
-*.key
-id_rsa
-id_rsa.pub
-
+## 🚀 Deployment Steps
+1. Initialize Terraform:
+   ```sh
+   terraform init
+Plan changes:
+sh
+Copy
+Edit
+terraform plan
+Apply infrastructure:
+sh
+Copy
+Edit
+terraform apply -auto-approve
+Destroy when done:
+sh
+Copy
+Edit
+terraform destroy -auto-approve
